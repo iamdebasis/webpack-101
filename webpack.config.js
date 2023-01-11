@@ -38,13 +38,13 @@ module.exports = {
       },
     ],
   },
-  //   plugins: [new BundleAnalyzerPlugin()],
-  plugins: [
+   plugins: [
     new HtmlWebpackPlugin({
       title: "Webpack App",
       filename: "index.html",
       template: "src/template.html",
     }),
+    // new BundleAnalyzerPlugin(),
   ],
   devtool: "source-map",
   devServer: {
